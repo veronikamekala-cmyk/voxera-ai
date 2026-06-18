@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Poppins, Arial, sans-serif;
+    background: radial-gradient(circle at top, #312e81, #020617 50%);
+    color: white;
+}
+
+.page {
+    min-height: 100vh;
+    padding: 40px;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin: 0;
+
+    background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero h2 {
+    font-size: 24px;
+    opacity: 0.9;
+}
+
+.hero p {
+    color: #cbd5e1;
+}
+
+/* GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(90deg, #06b6d4, #8b5cf6);
+    border: none;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+
+    /* IMPORTANT: prevents click issues */
+    pointer-events: auto;
+    position: relative;
+    z-index: 2;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* INPUT */
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 10px;
+}
